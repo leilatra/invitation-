@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fatou & Idrissa — Notre mariage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="frame"></div>
+
+<section class="hero">
+  <div class="eyebrow reveal">Le mariage de</div>
+  <h1 class="reveal">Fatou</h1>
+  <div class="amp reveal">&amp;</div>
+  <h1 class="reveal">Idrissa</h1>
+  <div class="rule reveal"></div>
+  <div class="date reveal">5 JUIN 2027</div>
+  <div class="place reveal">Radisson Blu, Dakar</div>
+  <div class="scroll-cue">FAIRE DÉFILER</div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="ornament reveal">❦</div>
+    <div class="eyebrow reveal" style="margin-bottom:20px;">Avec joie</div>
+    <h2 class="section-title reveal">Vous êtes invités</h2>
+    <p class="center-text reveal">
+      Entourés de nos familles et de nos amis les plus chers, nous unirons nos vies
+      le temps d'une soirée que nous voulons inoubliable. Votre présence serait
+      pour nous le plus beau des cadeaux.
+    </p>
+  </div>
+</section>
+
+<section style="background:#FAF6EA;">
+  <div class="col">
+    <div class="ornament reveal">❦</div>
+    <div class="eyebrow reveal" style="margin-bottom:20px;">Déroulé de la journée</div>
+    <h2 class="section-title reveal">Le programme</h2>
+    <div class="programme-list reveal">
+      <div class="p-row"><span class="time">16H00</span><span class="what">Cérémonie religieuse</span></div>
+      <div class="p-row"><span class="time">18H00</span><span class="what">Photos &amp; cocktail</span></div>
+      <div class="p-row"><span class="time">20H00</span><span class="what">Dîner de mariage</span></div>
+      <div class="p-row"><span class="time">22H30</span><span class="what">Soirée dansante</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col photo-wrap reveal">
+    <div class="photo-frame">
+      <div class="photo-frame-inner"><span class="ph-text">Photo du couple<br>à ajouter</span><img src="images/e.jpeg" alt="Photo du couple" onerror="this.remove()"></div>
+    </div>
+  </div>
+</section>
+
+<section class="histoire" style="background:#FAF6EA;">
+  <div class="col">
+    <div class="ornament reveal">❦</div>
+    <div class="eyebrow reveal" style="margin-bottom:20px;">Notre histoire</div>
+    <h2 class="section-title reveal">Une promesse qui prend vie</h2>
+    <p class="reveal">
+      Notre rencontre n'a rien eu d'ordinaire, et depuis, chaque jour a confirmé
+      ce que nous savions déjà : que nous étions faits pour marcher ensemble.
+      Aujourd'hui, nous sommes prêts à écrire la suite, avec vous à nos côtés.
+    </p>
+    <div class="signature reveal">Fatou &amp; Idrissa</div>
+  </div>
+</section>
+
+<section>
+  <div class="col" style="max-width:900px;">
+    <div class="ornament reveal">❦</div>
+    <div class="eyebrow reveal" style="margin-bottom:8px;">Souvenirs</div>
+    <h2 class="section-title reveal">Galerie</h2>
+    <div class="gallery-row reveal">
+      <div class="g-slot"><div class="in"><span class="ph-text">Photo 1<br>à ajouter</span><img src="images/b.jpeg" alt="Photo 1" onerror="this.remove()"></div></div>
+      <div class="g-slot"><div class="in"><span class="ph-text">Photo 2<br>à ajouter</span><img src="images/c.jpeg" alt="Photo 2" onerror="this.remove()"></div></div>
+      <div class="g-slot"><div class="in"><span class="ph-text">Photo 3<br>à ajouter</span><img src="images/d.jpeg" alt="Photo 3" onerror="this.remove()"></div></div>
+      <div class="g-slot"><div class="in"><span class="ph-text">Photo 4<br>à ajouter</span><img src="images/a.jpeg" alt="Photo 4" onerror="this.remove()"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="rsvp">
+  <div class="col">
+    <div class="ornament reveal">❦</div>
+    <div class="eyebrow reveal" style="margin-bottom:20px;">Votre présence</div>
+    <h2 class="section-title reveal">Confirmer ma présence</h2>
+  </div>
+  <form class="rsvp-card reveal" onsubmit="return envoyerRSVP(event)">
+    <input type="text" id="rsvp-nom" placeholder="Nom et prénom" required>
+    <select id="rsvp-nombre" required>
+      <option value="" disabled selected>Nombre de personnes</option>
+      <option>1 personne</option>
+      <option>2 personnes</option>
+      <option>3 personnes</option>
+      <option>4 personnes</option>
+    </select>
+    <textarea id="rsvp-message" placeholder="Un mot pour les mariés (facultatif)" rows="3"></textarea>
+    <button type="submit">Confirmer ma présence</button>
+  </form>
+  <p class="rsvp-note">Votre confirmation ouvrira WhatsApp avec un message prérempli.</p>
+</section>
+
+<footer>
+  <div class="ornament">❦</div>
+  <p style="font-family:'Italiana',serif; font-size:1.2rem; color:var(--ink);">Fatou &amp; Idrissa</p>
+  <p>5 juin 2027 — Dakar</p>
+</footer>
+
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

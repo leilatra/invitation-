@@ -1,0 +1,7 @@
+/* Adaptations mobile et tablette */
+
+@media (max-width:640px){
+    .frame{inset:8px;}
+    .frame::before{inset:4px;}
+    .gallery-row{grid-template-columns:repeat(2,1fr);}
+  }
